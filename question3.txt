@@ -1,0 +1,32 @@
+Q3.What are the different types of CSS Selectors?
+
+In CSS, selectors are used to target and style specific HTML elements. There are several types of CSS selectors, which can be classified into the following categories:
+
+Basic Selectors
+1. Universal Selector (*)*: Selects all elements.
+2. Element Selector (element): Selects elements by their HTML tag name (e.g., p, h1, div).
+3. Class Selector (.class): Selects elements with a specific class attribute (e.g., .header, .footer).
+4. ID Selector (#id): Selects an element with a specific ID attribute (e.g., #header, #footer).
+
+Combinator Selectors
+1. Descendant Selector : Selects elements that are descendants of a specific ancestor (e.g., div p).
+2. Child Selector : Selects elements that are direct children of a specific parent (e.g., div > p).
+3. Adjacent Sibling Selector : Selects elements that are adjacent siblings (e.g., h2 + p).
+4. General Sibling Selector : Selects elements that are general siblings (e.g., h2 ~ p).
+
+Attribute Selectors
+1. Attribute Presence Selector : Selects elements that have a specific attribute (e.g., [href]).
+2. Attribute Value Selector : Selects elements that have a specific attribute with a specific value (e.g., [href="https://www.example.com"]).
+3. Attribute Value Contains Selector : Selects elements that have a specific attribute with a value containing a specific substring (e.g., [href*="example"]).
+
+Pseudo-Class Selectors
+1. Link Pseudo-Class : Selects unvisited links.
+2. Visited Pseudo-Class : Selects visited links.
+3. Hover Pseudo-Class : Selects elements when the user hovers over them.
+4. Active Pseudo-Class : Selects elements when they are activated (e.g., clicked).
+5. Focus Pseudo-Class : Selects elements when they receive focus (e.g., when a form input is selected)
+Pseudo-Element Selectors
+1. First-Line Pseudo-Element : Selects the first line of a block-level element.
+2. First-Letter Pseudo-Element : Selects the first letter of a block-level element.
+3. Before Pseudo-Element: Selects the area before the content of an element.
+4. After Pseudo-Element : Selects the area after the content of an Element.

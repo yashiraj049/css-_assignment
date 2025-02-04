@@ -1,0 +1,33 @@
+Q4.How are inline and block elements different from each other?
+
+In HTML, elements are categorized into two main types: inline elements and block elements. The main difference between them lies in their display behavior, layout, and how they interact with other elements.
+Inline Elements: Inline elements are those that do not start on a new line and only take up the space needed to display their content. They are typically used for text-level elements, such as:
+- span
+- a 
+- img 
+- input 
+- label
+- strong
+- em
+- u
+Characteristics of inline elements:
+- They do not start on a new line.
+- They only take up the space needed to display their content.
+- They can be wrapped to the next line if the content is too long.
+- They cannot have a width or height set explicitly.
+- They are typically used for text-level elements.
+Block Elements:- Block elements, on the other hand, are those that start on a new line and take up the full width available. They are typically used for structural elements, such as:
+- div
+- p 
+- h1-h6 
+- ul 
+- ol 
+- table
+- form
+
+Characteristics of block elements:
+- They start on a new line.
+- They take up the full width available.
+- They can have a width and height set explicitly.
+- They can contain other block-level elements or inline elements.
+- They are typically used for structural elements.

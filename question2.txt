@@ -1,0 +1,37 @@
+Q2.Explain the difference between absolute and relative positions.
+
+In CSS, absolute and relative positions are two different values for the position property. Understanding the difference between them is crucial for building layouts and positioning elements.
+Relative Positioning (position: relative;):-
+When an element has position relative, it means that the element is positioned relative to its normal position in the document flow. The element remains in the document flow, and its position is offset by the values specified in the top, right, bottom, and left properties.
+
+Key characteristics of relative positioning:
+1. The element remains in the document flow.
+2. The elements  position is offset relative to its normal position.
+3. The elements dimensions (width and height) are not affected.
+
+Example:
+
+.element {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+In this example, the element will be moved 20 pixels down and 30 pixels to the right from its normal position.
+
+Absolute Positioning (position: absolute;):-When an element has position: absolute;, it means that the element is removed from the document flow and positioned absolutely relative to its nearest positioned ancestor (or the initial containing block, if there is no positioned ancestor). The element's position is determined by the values specified in the top, right, bottom, and left properties.
+
+Key characteristics of absolute positioning:
+1. The element is removed from the document flow.
+2. The elements position is determined relative to its nearest positioned ancestor.
+3. The elements dimensions (width and height) can be affected by the positioning.
+
+Example:
+.container {
+  position: relative;
+}
+.absolute-element {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+In this example, the .absolute-element will be positioned absolutely relative to the .container element, which is its nearest positioned ancestor.
