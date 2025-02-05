@@ -5,63 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome CDN for hamburger icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="logo">
         <img src="logo1.jpg" alt="TO THE NEW Logo" />
       </div>
+      <br>
     </header>
-    <hr>
 
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <!-- Mobile Menu Icon -->
+      <span class="menu-icon"><i class="fas fa-bars"></i></span>
+
+      <ul class="navbar-menu">
+        <li><a href="#">Home</a></li>
         <li>
-          <label for="Home"></label>
-          <select name="Home" id="home">
-            <option value="right-sidebar">Right Sidebar Post</option>
-            <option value="left-sidebar">Left Sidebar Post</option>
-            <option value="fullwidth">Fullwidth Post</option>
-            <option value="gallery">Gallery Post</option>
-            <option value="video">Video Post</option>
-            <option value="music">Music Post</option>
-          </select>
+          <a href="#">Single Posts</a>
+          <ul class="dropdown">
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+          </ul>
         </li>
         <li>
-          <select name="Single Post" id="single-post">
-            <option value="right-sidebar">Right Sidebar Post</option>
-            <option value="left-sidebar">Left Sidebar Post</option>
-            <option value="fullwidth">Fullwidth Post</option>
-            <option value="gallery">Gallery Post</option>
-            <option value="video">Video Post</option>
-            <option value="music">Music Post</option>
-          </select>
-        </li>
-        <li>
-          <select name="Pages" id="pages">
-            <option value="right-sidebar">Right Sidebar Post</option>
-            <option value="left-sidebar">Left Sidebar Post</option>
-            <option value="fullwidth">Fullwidth Post</option>
-            <option value="gallery">Gallery Post</option>
-            <option value="video">Video Post</option>
-            <option value="music">Music Post</option>
-          </select>
+          <a href="#">Pages</a>
+          <ul class="dropdown">
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+          </ul>
         </li>
         <li><a href="#">Category</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="#">Contact Me</a></li>
         <li>
-          <select name="Features" id="features">
-            <option value="right-sidebar">Right Sidebar Post</option>
-            <option value="left-sidebar">Left Sidebar Post</option>
-            <option value="fullwidth">Fullwidth Post</option>
-            <option value="gallery">Gallery Post</option>
-            <option value="video">Video Post</option>
-            <option value="music">Music Post</option>
-          </select>
+          <a href="#">Features</a>
+          <ul class="dropdown">
+            <li><a href="#">Feature 1</a></li>
+            <li><a href="#">Feature 2</a></li>
+          </ul>
         </li>
       </ul>
     </nav>
-<section class="banner">
+
+    <section class="banner">
       <img src="Brooklyn_Bridge_Manhattan.jpeg" alt="City Banner" />
       <div class="banner-text">
         <h1>Contact Us</h1>
@@ -100,41 +88,28 @@
 
             <label>Hobbies:</label>
             <div class="hobbies">
-                <input
-                type="checkbox"
-                id="reading"
-                name="hobbies"
-                value="Reading"
-              />
-              <label for="reading">Reading</label>
-              <input
-                type="checkbox"
-                id="writing"
-                name="hobbies"
-                value="Writing"
-              />
-              <label for="writing">Writing</label>
-              <input type="checkbox" id="music" name="hobbies" value="Music" />
-              <label for="music">Music</label>
-              <input type="checkbox" id="sports" name="hobbies" value="Sports" />
-              <label for="sports">Sports</label>
+                <input type="checkbox" id="reading" name="hobbies" value="Reading" />
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="writing" name="hobbies" value="Writing" />
+                <label for="writing">Writing</label>
+                <input type="checkbox" id="music" name="hobbies" value="Music" />
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="hobbies" value="Sports" />
+                <label for="sports">Sports</label>
             </div>
-<label for="message">Message:</label>
+
+            <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
             <button type="submit">Submit Form</button>
           </form>
         </section>
 
-        <!-- Right Column -->
+        <!-- Right Column (About Us section) -->
         <div class="right-sidebar">
-          <!-- About Us Section -->
           <div class="about-us">
             <h3>ABOUT US</h3>
-            <img
-              src="a-modern-office-with-a-view-of-a-city-free-photo.jpg"
-              alt="About Us Image"
-            />
+            <img src="a-modern-office-with-a-view-of-a-city-free-photo.jpg" alt="About Us Image" />
             <p>
               Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus.
@@ -149,6 +124,7 @@
               <a href="#"><img src="pinterest-icon.png" alt="Pinterest" /></a>
               <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
             </div>
+          </div>
         </div>
       </div>
     </main>
@@ -213,10 +189,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Contact Me</a></li>
           </ul></div>
-          
         </div>
       </footer>
-      
   </body>
 </html>
-
